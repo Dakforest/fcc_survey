@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css.css" rel="stylesheet" type="text/css" >
+		<title></title>
+	</head>
+	<body>
+		<main>
+			<div id="wrapper">
+				<h1 id="title">Who is your favorite superhero team?</h1>
+				<p id="description">Let's build your dream team!</p>
+				<div id="formwrapper">
+					<form id="survey-form">
+						<label id="name-label" for="name" >Full Name</label>
+						<input type="text" size="30" id="name" placeholder="John Doe" required />
+						<label id="email-label" for="email" >Email Address</label>
+						<input type="email" size="30" id="email" placeholder="john@gmail.com" required/>
+						<label id="number-label" for="number">Age</label>
+						<input type="number" size="30" id="number" placeholder="32" min="10" max="110"/>
+						<label id="dropdown-label" for="dropdown">Favorite Team</label>
+						<select id="dropdown">
+							<option>Marvel</option>
+							<option>DC</option>
+							<option>Anime</option>
+							<option>Bandai</option>
+						</select>
+						<fieldset id="favheros">
+							<legend>Favorite Heros</legend>
+							<input type="checkbox" name="hero" id="ironman" value="Ironman" />
+							<label for="ironman">Ironman</label>
+							<input type="checkbox" name="hero" id="batman" value="Batman" />
+							<label for="batman">Batman</label>
+							<input type="checkbox" name="hero" id="salormoon" value="Sailor Moon"/>
+							<label for="sailormoon">Sailor Moon</label>
+							<input type="checkbox" name="hero" id="greenranger" value="Green Ranger" />
+							<label for="greenranger">Green Ranger</label>
+							<input type="checkbox" name="hero" id="onepunch" value="One Punch Man" />
+							<label for="onepunch">One Punch Man</label>
+						</fieldset>
+						<fieldset id="favsidekick">
+							<legend>Preferred Sidekick</legend>
+							<input type="radio" name="sidekick" id="jarvis" value="Jarvis" />
+							<label for="jarvis">Jarvis</label>
+							<input type="radio" name="sidekick" id="robin" value="Robin" />
+							<label for="robin">Robin</label>
+							<input type="radio" name="sidekick" id="luna" value="Luna"/>
+							<label for="luna">Luna</label>
+							<input type="radio" name="sidekick" id="alpha5" value="Alpha 5" />
+							<label for="alpha5">Alpha 5</label>
+							<input type="radio" name="sidekick" id="genos" value="Genos" />
+							<label for="genos">Genos</label>
+						</fieldset>
+						<label for="favstory">What is your favorite story with these characters?</label>
+						<textarea name="favstory" rows="5" cols="60"></textarea>
+						<button type="submit" id="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+			<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		</main>
+	</body>
+</html>
+</html>

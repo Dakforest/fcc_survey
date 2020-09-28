@@ -1,0 +1,62 @@
+* {border: none;}
+
+body {
+	background-image: url("heros.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#wrapper {
+	width:60%;
+	margin: auto;
+	background-color: rgba(176, 158, 42, .85);
+	border-radius:2em;
+	padding:1em 2em 2em 2em
+}
+
+#formwrapper {
+	width: 90%;
+	margin: auto;
+}
+
+label {
+	display: block;
+}
+
+label, p, legend, button, select {
+	font-family: Arial;
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: 500;
+	padding: .5em;
+}
+
+legend {
+	text-align: left;
+	font-weight: 700;
+}
+
+fieldset label {
+	display: inline;
+}
+
+#name, #email, #number, textarea, select {
+	border-radius: .35em;
+	padding: .5em;
+	width: 100%;
+	border: none;
+}
+
+button {
+	display: block;
+	width: 100%;
+	border-radius: .35em;
+	padding: .5em;
+	background-color: #c9b112;
+	margin: .5em -2em 0 0;
+}
+
+h1, p {
+	text-align: center;
+}
