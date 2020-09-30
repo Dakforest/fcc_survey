@@ -1,16 +1,18 @@
 * {border: none;}
 
 body {
-	background-image: url("heros.jpg");
+	background-image: url("https://www.muralswallpaper.com/app/uploads/misty-valley-forests-plain.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	font-family:Georgia;
 }
 
 #wrapper {
-	width:60%;
+	width:50%;
 	margin: auto;
-	background-color: rgba(176, 158, 42, .85);
+	background-color: rgba(32,60,58,.9);
+	color:#e3e7eb;
 	border-radius:2em;
 	padding:1em 2em 2em 2em
 }
@@ -20,16 +22,18 @@ body {
 	margin: auto;
 }
 
-label {
-	display: block;
-}
-
 label, p, legend, button, select {
-	font-family: Arial;
 	font-size: 1.2em;
 	text-align: center;
 	font-weight: 500;
 	padding: .5em;
+}
+
+p {margin:0;}
+
+label {
+	display: block;
+	text-align:left;
 }
 
 legend {
@@ -53,10 +57,41 @@ button {
 	width: 100%;
 	border-radius: .35em;
 	padding: .5em;
-	background-color: #c9b112;
+	background-color:#1e653f;
+	color:#e3e7eb;
 	margin: .5em -2em 0 0;
 }
 
-h1, p {
+button, input, select {
+	font-family:inherit;
+	font-size:inherit;
+}
+
+input {font-size:1em;}
+.disabled {color:grey;}
+
+h1 {
 	text-align: center;
+}
+
+#fav-activities, #satisfaction {
+	display:flex;
+	flex-direction:column;
+}
+#fav-activities label, #satisfaction label {
+	display:inline;
+	position:relative;
+	left:2.25em;
+	top:.45em;
+}
+#fav-activities input, #satisfaction input {
+	margin-bottom:-2.25em;
+	position: relative;
+	left:2em;
+}
+
+@media (max-width:800px){
+	#wrapper {
+		width:80%;
+	}
 }
